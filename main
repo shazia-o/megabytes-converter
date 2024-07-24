@@ -1,0 +1,15 @@
+public class MegaBytesConverter {
+  \\This is a small program that converts kilobytes to megabytes
+    
+    public static void printMegaBytesAndKiloBytes (int kiloBytes) {
+        
+        int megaBytes = kiloBytes / 1024;    //calculate MB
+        int remainingKB = kiloBytes % 1024;  //calculate remaining KB
+        
+        if (kiloBytes < 0) {
+            System.out.println("Invalid Value");  //validation check
+        } else {
+        System.out.println(kiloBytes + " KB = " + megaBytes + " MB and " + remainingKB + " KB");
+        }
+    }
+}
